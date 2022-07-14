@@ -3,9 +3,12 @@ package main
 import "testing"
 
 func TestSoma(t *testing.T) {
-	total := Soma(15,15)
-	if total != 30 {
-		t.Fatalf("Resultado da Soma é  invalido: Resultado %v. Esperado %v", total, 30)
-	}
+    got := Soma(15,15)
+    want := 30
+
+    if got != want {
+        t.Errorf("got %q, wanted %q", got, want)
+    }	
+	
 }
 
