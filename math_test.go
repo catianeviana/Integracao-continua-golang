@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+    "fmt"
+    "testing"
+)
 
 func TestSoma(t *testing.T) {
     got := Soma(15,15)
